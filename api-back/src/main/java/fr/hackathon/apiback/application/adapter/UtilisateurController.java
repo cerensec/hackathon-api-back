@@ -5,9 +5,11 @@ import fr.hackathon.apiback.domain.ports.api.UtilisateurService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@RestController("/utilisateur")
+@RestController
+@RequestMapping("/utilisateur")
 public class UtilisateurController {
     private final UtilisateurService service;
 

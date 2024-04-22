@@ -3,7 +3,9 @@ package fr.hackathon.apiback.infrastructure.adapter;
 import fr.hackathon.apiback.domain.Utilisateur;
 import fr.hackathon.apiback.domain.ports.spi.IUtilisateurDao;
 import fr.hackathon.apiback.infrastructure.repository.UtilisateurRepository;
+import org.springframework.stereotype.Service;
 
+@Service
 public class UtilisateurDao implements IUtilisateurDao {
 
     private final UtilisateurRepository utilisateurRepository;
