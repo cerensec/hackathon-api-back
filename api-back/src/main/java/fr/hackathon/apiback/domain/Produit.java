@@ -3,8 +3,8 @@ package fr.hackathon.apiback.domain;
 import jakarta.persistence.*;
 import lombok.Data;
 
+@Entity
 @Data
-
 public class Produit {
 
     @Id
@@ -17,8 +17,8 @@ public class Produit {
     @Column(name = "description")
     private String description;
 
-    @ManyToOne
-    @JoinColumn(name = "catalogueId")
-    private Catalogue catalogue;
-    
+    // @ManyToOne
+    // @JoinColumn(name = "catalogueId")
+    // private Catalogue catalogue;
+
 }

@@ -5,4 +5,5 @@ import fr.hackathon.apiback.domain.Produit;
 import java.util.List;
 
 public interface IProduitService {
+    public List<Produit> recupererProduits();
 }
